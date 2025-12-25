@@ -22,3 +22,21 @@ Download it from:
 https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
 
 After downloading, place it in:
+
+## 🧠 Methodology
+- Stratified train/validation/test split
+- Class imbalance handled via oversampling
+- Data augmentation (flip, rotation, color jitter)
+- Adam optimiser + LR scheduling
+- Early stopping
+
+## 📊 Results
+- Overall accuracy: **84.52%**
+- Strong performance on benign and malignant classes
+- Common confusion between melanoma and nevi (clinically realistic)
+
+## ▶️ How to Run
+```bash
+pip install -r requirements.txt
+python src/train.py
+python src/evaluate.py
